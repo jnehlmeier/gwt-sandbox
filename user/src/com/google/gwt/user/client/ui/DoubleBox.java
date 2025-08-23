@@ -21,11 +21,18 @@ import com.google.gwt.text.client.DoubleRenderer;
 
 /**
  * A ValueBox that uses {@link DoubleParser} and {@link DoubleRenderer}.
+ * 
+ * <h3>CSS Style Rules</h3>
+ * <ul class='css'>
+ * <li>.gwt-DoubleBox { primary style }</li>
+ * <li>.gwt-DoubleBox-readonly { dependent style set when the double box is read-only }</li>
+ * </ul>
  */
 public class DoubleBox extends ValueBox<Double> {
 
   public DoubleBox() {
     super(Document.get().createTextInputElement(), DoubleRenderer.instance(),
         DoubleParser.instance());
+    setStyleName("gwt-DoubleBox");
   }
 }

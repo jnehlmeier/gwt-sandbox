@@ -21,11 +21,18 @@ import com.google.gwt.text.client.LongRenderer;
 
 /**
  * A ValueBox that uses {@link LongParser} and {@link LongRenderer}.
+ * 
+ * <h3>CSS Style Rules</h3>
+ * <ul class='css'>
+ * <li>.gwt-LongBox { primary style }</li>
+ * <li>.gwt-LongBox-readonly { dependent style set when the long box is read-only }</li>
+ * </ul>
  */
 public class LongBox extends ValueBox<Long> {
 
   public LongBox() {
     super(Document.get().createTextInputElement(), LongRenderer.instance(),
         LongParser.instance());
+    setStyleName("gwt-LongBox");
   }
 }

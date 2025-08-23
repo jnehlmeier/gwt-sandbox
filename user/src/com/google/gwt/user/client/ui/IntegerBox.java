@@ -21,10 +21,17 @@ import com.google.gwt.text.client.IntegerRenderer;
 
 /**
  * A ValueBox that uses {@link IntegerParser} and {@link IntegerRenderer}.
+ * 
+ * <h3>CSS Style Rules</h3>
+ * <ul class='css'>
+ * <li>.gwt-IntegerBox { primary style }</li>
+ * <li>.gwt-IntegerBox-readonly { dependent style set when the integer box is read-only }</li>
+ * </ul>
  */
 public class IntegerBox extends ValueBox<Integer> {
   public IntegerBox() {
     super(Document.get().createTextInputElement(), IntegerRenderer.instance(),
         IntegerParser.instance());
+    setStyleName("gwt-IntegerBox");
   }
 }

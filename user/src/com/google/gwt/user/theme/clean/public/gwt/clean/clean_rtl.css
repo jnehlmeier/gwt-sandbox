@@ -866,6 +866,15 @@ select {
 .gwt-TextBox-readonly {
   color: #888;
 }
+.gwt-IntegerBox-readonly {
+  color: #888;
+}
+.gwt-DoubleBox-readonly {
+  color: #888;
+}
+.gwt-LongBox-readonly {
+  color: #888;
+}
 .gwt-ToggleButton-up,
 .gwt-ToggleButton-up-hovering,
 .gwt-ToggleButton-up-disabled,
